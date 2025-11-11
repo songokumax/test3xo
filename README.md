@@ -11,4 +11,4 @@ craw trên fullcliphot cần:
 - Cài gpac_latest_head_win64.exe từ https://gpac.io/downloads/gpac-nightly-builds/
 - pip install playwright requests beautifulsoup4 pandas openpyxl tqdm
 - python -m playwright install chromium
-Test chạy python crawl_fullcliphot.py --start 1 --end 5 --out luuvideo --excel ketqua.xlsx
+- Test chạy python crawl_fullcliphot.py --start 1 --end 5 --out luuvideo --excel ketqua.xlsx
