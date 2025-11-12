@@ -12,3 +12,5 @@ craw trên fullcliphot cần:
 - pip install playwright requests beautifulsoup4 pandas openpyxl tqdm
 - python -m playwright install chromium
 - Test chạy python crawl_fullcliphot.py --start 1 --end 5 --out luuvideo --excel ketqua.xlsx
+
+Quatvn: chạy python crawl_quatvn.py --start 1 --end 5 --out luuvideo --excel ketqua.xlsx
