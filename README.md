@@ -19,9 +19,9 @@ playvideo_loc:
 - Nên cài python 3.11.x để cài thư viện ko bị lỗi.
 - pip install pandas opencv-python openpyxl (Nếu lỗi do dùng phiên bản python mới, gỡ ra, cài lại bản cũ hơn như 3.11.x, rồi chạy:
 
-py -3.11 -m ensurepip --upgrade
-py -3.11 -m pip install --upgrade pip
-py -3.11 -m pip install pandas opencv-python openpyxl
+* py -3.11 -m ensurepip --upgrade
+* py -3.11 -m pip install --upgrade pip
+* py -3.11 -m pip install pandas opencv-python openpyxl
 
 Trong đó:
 - Phím O = OK, K = KO, N = bỏ qua, ESC = thoát chương trình
