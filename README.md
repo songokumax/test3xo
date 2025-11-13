@@ -27,4 +27,4 @@ Trong đó:
 - Phím O = OK, K = KO, N = bỏ qua, ESC = thoát chương trình
 - Phím A = tua lùi 10s, D = tua tới 10s, khi hết video: Enter = phát lại
 
-(nhớ sửa đường dẫn thư mục video và file execl)
+(nhớ sửa đường dẫn thư mục video và file execl, nếu file excel chưa có cột chon_loc, hãy thêm bằng tay trước)
