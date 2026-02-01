@@ -28,3 +28,41 @@ Trong đó:
 - Phím A = tua lùi 10s, D = tua tới 10s, khi hết video: Enter = phát lại
 
 (nhớ sửa đường dẫn thư mục video và file execl, nếu file excel chưa có cột chon_loc, hãy thêm bằng tay trước)
+
+*** Với segmenttiktok.py cần cài pip install PyQt6 requests pandas openpyxl
+Và:
+
+Bước 1: Tải bộ cài FFmpeg
+Truy cập trang: gyan.dev/ffmpeg/builds (đây là nguồn phổ biến nhất cho Windows).
+
+Tìm phần git full build, chọn link ffmpeg-git-full.7z để tải về.
+
+Sử dụng WinRAR hoặc 7-Zip để giải nén file vừa tải.
+
+Bước 2: Cố định vị trí thư mục
+Sau khi giải nén, bạn sẽ thấy một thư mục kiểu ffmpeg-2026-01-xx.... Hãy đổi tên nó thành ngắn gọn là ffmpeg.
+
+Copy thư mục ffmpeg này và dán vào ổ **C:**. Đường dẫn chuẩn lúc này sẽ là: C:\ffmpeg.
+
+Bên trong thư mục này, bạn phải thấy thư mục con tên là bin (đây là nơi chứa file ffmpeg.exe).
+
+Bước 3: Thêm vào biến môi trường (PATH)
+Đây là bước quan trọng nhất để script Python không báo lỗi "FFmpeg not found".
+
+Nhấn phím Windows, gõ tìm kiếm: "env" và chọn "Edit the system environment variables".
+
+Trong cửa sổ hiện ra, nhấn nút Environment Variables... ở góc dưới bên phải.
+
+Ở phần System variables (bảng bên dưới), tìm dòng có tên là Path, chọn nó rồi nhấn Edit....
+
+Nhấn nút New, sau đó dán đường dẫn này vào: C:\ffmpeg\bin
+
+Nhấn OK -> OK -> OK để đóng hết các cửa sổ.
+
+Bước 4: Kiểm tra xem đã thành công chưa
+Mở Command Prompt (CMD) hoặc PowerShell lên.
+
+Gõ lệnh sau và nhấn Enter:
+
+ffmpeg -version
+Khi sử dụng, cần nhập cookie tiktok ads vào, và file excel có sẵn cột video_name, number_segment_img và video nằm trong luuvideo/videos
